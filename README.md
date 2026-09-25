@@ -1,4 +1,4 @@
-# 🚀 MeTubeConect
+# 🚀 MeTubeLocalConnect
 
 **MeTubeConect** (antes *MeTube Sender*) es una aplicación nativa para Android desarrollada en **Kotlin** y **Jetpack Compose**. Su objetivo principal es automatizar y simplificar el envío de enlaces multimedia desde el dispositivo móvil hacia una instancia autohospedada del servidor **MeTube** en un entorno de Home Lab.
 
