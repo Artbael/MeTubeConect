@@ -50,23 +50,6 @@ La aplicación sigue los principios de arquitectura limpia recomendados por Andr
 * JDK 17 (Java Development Kit)
 * Android SDK 24 (Android 7.0) o superior
 
-### Pasos
-1. Clona este repositorio:
-   ```bash
-   git clone [https://github.com/TuUsuario/MeTubeConect.git](https://github.com/TuUsuario/MeTubeConect.git)
-   Abre el proyecto en Android Studio.
-
-⚙️ Configuración Inicial
-
-* Abre MeTubeConect en tu dispositivo.
-
-* Toca el icono de Ajustes ⚙️ en la esquina superior derecha.
-
-* Ingresa la Dirección IP y Puerto de tu servidor local de MeTube.
-
-* Presiona Guardar.
-
-
 
 👨‍💻 Autor
 
