@@ -13,8 +13,8 @@
 
 - ⚡ **Lectura Automática del Portapapeles:** Detecta y procesa automáticamente enlaces multimedia al abrir la app mediante la escucha de foco de ventana (`onWindowFocusChanged`), superando las restricciones de privacidad modernas de Android.
 - 🎯 **Enrutamiento Inteligente por Reglas:**
-  - **Regla A (TikTok / Instagram / Reels):** Envío instantáneo con un solo toque utilizando parámetros optimizados (`best` / `mp4`).
-  - **Regla B (YouTube y otros sitios):** Despliega un modal interactivo para personalizar la calidad (4K, 1080p, 720p, etc.), formato (MP4, MKV) o modo de extracción (Video + Audio / Solo Audio).
+    - **Regla A (TikTok / Instagram / Reels):** Envío instantáneo con un solo toque utilizando parámetros optimizados (`best` / `mp4`).
+    - **Regla B (YouTube y otros sitios):** Despliega un modal interactivo para personalizar la calidad (4K, 1080p, 720p, etc.), formato (MP4, MKV) o modo de extracción (Video + Audio / Solo Audio).
 - ⚙️ **Configuración de Red Ágil:** Pantalla de ajustes con 5 casillas independientes (4 octetos de IP + Puerto) con formato automático, salto automático entre campos y soporte nativo para teclado numérico.
 - 🧹 **Gestión Eficiente de Memoria:** Destrucción limpia de tareas en segundo plano mediante `finishAndRemoveTask()`, garantizando cero consumo de batería residual.
 - 🎨 **Interfaz Moderna:** Diseñada 100% bajo los estándares de **Material Design 3** con modo oscuro nativo.
@@ -33,6 +33,16 @@ La aplicación sigue los principios de arquitectura limpia recomendados por Andr
 
 ---
 
+## 📸 Capturas de Pantalla
+
+
+
+| Pantalla de Ajustes (IP/Puerto) | Modal de Configuración (YouTube) |
+|:---:|:---:|
+| ![Settings](screenshots/settings.jpg) | ![Modal](screenshots/modal.jpg) |
+
+---
+
 ## 🚀 Instalación y Compilación
 
 ### Requisitos
@@ -43,5 +53,21 @@ La aplicación sigue los principios de arquitectura limpia recomendados por Andr
 ### Pasos
 1. Clona este repositorio:
    ```bash
-   git clone [https://github.com/Artbael/MeTubeConect.git](https://github.com/Artbael/MeTubeConect.git)
-   
+   git clone [https://github.com/TuUsuario/MeTubeConect.git](https://github.com/TuUsuario/MeTubeConect.git)
+   Abre el proyecto en Android Studio.
+
+⚙️ Configuración Inicial
+
+* Abre MeTubeConect en tu dispositivo.
+
+* Toca el icono de Ajustes ⚙️ en la esquina superior derecha.
+
+* Ingresa la Dirección IP y Puerto de tu servidor local de MeTube.
+
+* Presiona Guardar.
+
+
+
+👨‍💻 Autor
+
+Desarrollado con ❤️ por Artbael.
