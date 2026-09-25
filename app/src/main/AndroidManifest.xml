@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Necesario para hablar con el servidor MeTube en la red local o remota -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/ic_menu_send"
+        android:label="MeTube Sender"
+        android:theme="@style/Theme.MeTubeSender"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true">
+
+        <!--
+            usesCleartextTraffic="true" es necesario porque, normalmente, el
+            servidor MeTube corre en HTTP plano dentro de la red local. Si el usuario configura un dominio
+            HTTPS, esto no afecta esa conexión.
+        -->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.MeTubeSender"
+            android:excludeFromRecents="false"
+            android:noHistory="false">
+
+            <!-- 1) Abrir la app directamente desde el launcher -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- 2) Recibir enlaces vía "Compartir con..." desde YouTube, TikTok,
+                    Instagram, navegadores, etc. (texto plano) -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
